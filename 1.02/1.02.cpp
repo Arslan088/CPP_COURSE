@@ -72,6 +72,25 @@ int main()
 	int lines = lines1 - lines2;
 	cout << lines << "строк кода ему еще надо написать";
 //2
-
-
+	int lines,dalays2,sum;
+	cout << "Введите количество строк кода:";
+	cin >> lines;
+	cout << "Ведите желаемый доход васи:";
+	cin >> income;
+	lines = lines / 2;
+	if (lines > income) {
+		sum = (income - lines) / 20;
+		cout << sum << " он может опаздовать";
+	}
+	else
+	{
+		cout << "он не может опаздовать";
+	}
+	//3
+	int lines, dalays;
+	cout << "Введите количество строк кода:";
+	cin >> lines;
+	cout << "Введите количество опозданий:";
+	cin >> dalays;
+	int salary = (lines / 2) - dalays;
 }
