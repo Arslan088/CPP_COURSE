@@ -51,14 +51,7 @@ int main() {
 
     cout << "Число без цифр 3 и 6: " << result << endl;
     //4
-    int num1, num2;
-    cout << "Введите два целых числа\n";
-    cin >> num1>>num2;
-
-    for (int i = 1; i <= num1 && i <= num2; i++) {
-        if (num1 % i == 0 && num2 % i == 0)
-            cout << i << "\n";
-    }
+  
     //5
     int a, j = 0;
     cin >> a;
@@ -72,5 +65,23 @@ int main() {
         cout << "Куб суммы цифр этого числа равен А * А." << endl;
     else
         cout << "Куб суммы цифр этого числа не равен А * А." << endl;
+    //6
+    int num1 ;
+    cout << "Введите целое число \n";
+    cin >> num1 ;
+
+    for (int i = 1; i <= num1 ; i++) {
+        if (num1 % i == 0 )
+            cout << i << "\n";
+    //7
+    int num1, num2;
+    cout << "Введите два целых числа\n";
+    cin >> num1>>num2;
+
+    for (int i = 1; i <= num1 && i <= num2; i++) {
+        if (num1 % i == 0 && num2 % i == 0)
+            cout << i << "\n";
+    }
+    
     return 0;
 }
